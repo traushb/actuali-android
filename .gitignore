@@ -1,0 +1,31 @@
+# Build outputs and local caches
+**/build/
+.gradle/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+*.apk
+*.aab
+
+# Machine configuration and signing secrets
+local.properties
+*.jks
+*.keystore
+keystore.properties
+.env
+.env.*
+
+# IDE and operating system files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+captures/
+.DS_Store
+Thumbs.db
+
+# Local captures and diagnostics (publish reviewed images in docs/screenshots/)
+/screenshots/
+*.log
+CLAUDE.local.md

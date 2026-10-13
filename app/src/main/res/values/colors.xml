@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AccentColor.colorset on iOS. -->
+    <color name="accent">#8719E0</color>
+    <color name="window_background">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,10 @@
+# The app's own code, compiled ahead of time at install — the libraries ship
+# profiles for theirs. Without this every screen starts out interpreted and
+# warms up through the JIT while the user scrolls.
+#
+# ponytail: one wildcard covers the whole package rather than the paths a
+# generated profile would pick. The ceiling is install time and odex size
+# for code that rarely runs; the upgrade path is the Baseline Profile Gradle
+# plugin with a macrobenchmark journey, which also orders dex for startup.
+HSPLio/github/traushb/actuali/**;->**(**)**
+Lio/github/traushb/actuali/**;
