@@ -1,21 +1,22 @@
 # Actuali for Android
 
-An unofficial Android port of [Actuali](https://github.com/MattFaz/actuali), Matt Farrell's iOS companion app for [Actual Budget](https://actualbudget.org), a local-first, open-source budgeting tool. Built with Kotlin and Jetpack Compose, it brings offline-first budgeting to Android with Material 3 Expressive, a warm orange color scheme, and light and dark themes. Uce can use offline or self-hosted server 
+An unofficial Android client for [Actual Budget](https://actualbudget.org), ported from [Actuali](https://github.com/MattFaz/actuali), Matt Farrell's iOS companion app. **Connect to your own Actual Budget server to access and synchronize your budgets across Android and Actual's web or desktop clients.** A local copy keeps your budget available offline, and changes synchronize when you reconnect. Built with Kotlin and Jetpack Compose, the app uses Material 3 Expressive, a warm orange color scheme, and light and dark themes.
 
 **Unofficial — not affiliated with Actual Budget or the original Actuali author.** Please report Android issues in [this repository](https://github.com/traushb/actuali-android/issues).
 
 ## Port and credits
 
-This Android port was made by an AI coding agent, **Claude Code (Claude Opus 5.5 - Max reasoning)** It is based on [Matt Farrell's original MIT-licensed Actuali iOS app](https://github.com/MattFaz/actuali). The CRDT sync engine was ported from the iOS implementation, which in turn derives from [Actual Budget](https://actualbudget.org) and its [open-source project](https://github.com/actualbudget/actual).
+This Android port was made by an AI coding agent, **Claude Code (Claude Opus 5.5 - Max reasoning)**. It is based on [Matt Farrell's original MIT-licensed Actuali iOS app](https://github.com/MattFaz/actuali). The CRDT sync engine was ported from the iOS implementation, which in turn derives from [Actual Budget](https://actualbudget.org) and its [open-source project](https://github.com/actualbudget/actual).
 
 The Android application ID is `io.github.traushb.actuali`; it uses a separate identity from the original author's package.
 
 ## Screenshots
 
-Captured with the built-in demo budget. All names, balances, and transactions shown are sample data.
+The connection screen shows how to add your own server using the reserved example address `https://actual.example.com`, with no credentials entered. Budget screens use the built-in demo budget; all names, balances, and transactions shown are fictional sample data.
 
 | Light | Dark |
 | :---: | :---: |
+| <img src="docs/screenshots/connection-light.png" alt="Add your own Actual Budget server in light mode, with an example HTTPS address" width="320"> | <img src="docs/screenshots/connection-dark.png" alt="Add your own Actual Budget server in dark mode, with an example HTTPS address" width="320"> |
 | <img src="docs/screenshots/budget-light.png" alt="Demo envelope budget in light mode" width="320"> | <img src="docs/screenshots/budget-dark.png" alt="Demo envelope budget in dark mode" width="320"> |
 | <img src="docs/screenshots/accounts-light.png" alt="Demo accounts in light mode" width="320"> | <img src="docs/screenshots/accounts-dark.png" alt="Demo accounts in dark mode" width="320"> |
 | <img src="docs/screenshots/reports-light.png" alt="Demo reports dashboard in light mode" width="320"> | <img src="docs/screenshots/reports-dark.png" alt="Demo reports dashboard in dark mode" width="320"> |
@@ -23,6 +24,7 @@ Captured with the built-in demo budget. All names, balances, and transactions sh
 
 ## Features
 
+- Connect to your own Actual Budget server and synchronize budgets with Actual's web and desktop clients.
 - Envelope and tracking budgets, with category balances and monthly allocations.
 - Accounts and transaction history.
 - Add, edit, and split transactions, including transfers.
@@ -58,6 +60,8 @@ Run the unit tests with:
 ```
 
 ## Connect to your Actual server
+
+Use a self-hosted or hosted Actual Budget server that your phone can reach over HTTPS. The demo budget is an optional way to explore the interface; connect your server to use and sync your own budgets.
 
 1. Set up an [Actual Budget server](https://actualbudget.org/docs/install/) and create or upload a budget using its web app.
 2. Open Actuali on your phone, go to **More → Connection & Data**, and enter your server's HTTPS address. The server must be reachable from the phone.
