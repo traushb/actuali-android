@@ -1,12 +1,12 @@
 # Actuali for Android
 
-An unofficial Android port of [Actuali](https://github.com/MattFaz/actuali), Matt Farrell's iOS companion app for [Actual Budget](https://actualbudget.org), a local-first, open-source budgeting tool. Built with Kotlin and Jetpack Compose, it brings offline-first budgeting to Android with Material 3 Expressive, a warm orange color scheme, and light and dark themes.
+An unofficial Android port of [Actuali](https://github.com/MattFaz/actuali), Matt Farrell's iOS companion app for [Actual Budget](https://actualbudget.org), a local-first, open-source budgeting tool. Built with Kotlin and Jetpack Compose, it brings offline-first budgeting to Android with Material 3 Expressive, a warm orange color scheme, and light and dark themes. Uce can use offline or self-hosted server 
 
 **Unofficial — not affiliated with Actual Budget or the original Actuali author.** Please report Android issues in [this repository](https://github.com/traushb/actuali-android/issues).
 
 ## Port and credits
 
-This Android port was made by an AI coding agent, **Claude Code (Claude Opus 5.5)**, directed and tested by **traushb**. It is based on [Matt Farrell's original MIT-licensed Actuali iOS app](https://github.com/MattFaz/actuali). The CRDT sync engine was ported from the iOS implementation, which in turn derives from [Actual Budget](https://actualbudget.org) and its [open-source project](https://github.com/actualbudget/actual).
+This Android port was made by an AI coding agent, **Claude Code (Claude Opus 5.5 - Max reasoning)** It is based on [Matt Farrell's original MIT-licensed Actuali iOS app](https://github.com/MattFaz/actuali). The CRDT sync engine was ported from the iOS implementation, which in turn derives from [Actual Budget](https://actualbudget.org) and its [open-source project](https://github.com/actualbudget/actual).
 
 The Android application ID is `io.github.traushb.actuali`; it uses a separate identity from the original author's package.
 
